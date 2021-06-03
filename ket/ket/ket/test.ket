@@ -1,0 +1,30 @@
+from ket.lib import within
+
+#s = quant(3)
+#d = dump(s)
+#print("qubits iniciais:", dump(s).show())
+
+s = quant(3)
+h(s)
+d = dump(s)
+print("Inicialização dos qubits: ", d.show())
+
+s = quant(3)
+h(s)
+within(lambda: x(s[1:]),
+        lambda: ctrl(s[1:],z,s[0]))
+d = dump(s)
+print("Aplicação do oráculo: ",d.show())
+
+s = quant(3)
+h(s)
+within(lambda: x(s[1:]),
+        lambda: ctrl(s[1:],z,s[0]))
+
+within(lambda: [h(s),x(s)],
+        lambda: ctrl(s[1:],z,s[0]))
+
+d = dump(s)
+h(s)
+
+print("Aplicação do Difusor: ",d.show())
