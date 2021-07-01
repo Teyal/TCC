@@ -8,33 +8,6 @@ import pandas as pd
 def gen_answers(amount, max):
     return [random.randint (1,max) for i in range(amount)]
 
-def gen_dnf():
-    return '''
-    c example DIMACS-CNF 3-SAT
-    p cnf 3 3
-    1 2 -3 0
-    -1 -2 -3 0
-    -1 -2 3 0
-    '''
-
-def dnf_to_oracle(var, cla, y, expr):
-    x_state = [True]*len(var)    # True = positive, False = Negative
-    i = 0   # The counter for wich clause is being analysed
-
-    for c in expr:    # accessing only the clauses
-        list_var = []   # list variables being used in a single clause   
-        for v in c.split()[:-1]:    # ignoring the 0 at the end
-            if '-' in v:
-                state = False
-            else:
-                state = True
-            var_num = abs(int(v)) - 1    # -1 for easier access on the list
-            if state != x_state[var_num]:
-                X(var)
-                x_state[var_num] = not x_state[var_num]
-            list_var.append(var[var_num])
-        ctrl(list_var, X, cla[i])
-        i += 1 
 
 def oracle(x, y, answers):
     """f(x) = 1 if x == 3 else 0
@@ -46,26 +19,17 @@ def oracle(x, y, answers):
     """with control(x, on_state=3):
         X(y)"""
 
-def grover(size, oracle, steps, expression) -> int:
+def grover(size, oracle, steps, answers) -> int:
     """Grover's search algorithm"""
 
-    expr = expression.split('\n')
-    _,_,variables, clauses = expr[2].split()
-    variables = int(variables)
-    clauses = int(clauses)
-
-    print(variables)
-    var = quant(variables)
-    cla = quant(clauses)
+    s = quant(size)
     aux = X(quant())
 
-    H(var)
-    H(cla)
+    H(s)
     H(aux)
 
     for _ in range(steps):
-        with around(dnf_to_oracle(var, cla, aux, expr[3:-1])):
-            ctrl(cla, X, aux)
+        oracle(s, aux, answers)
         with around([H, X], s):
             ctrl(s[1:], Z, s[0])
 
@@ -77,8 +41,7 @@ def test(qubits, num_answers):
     lamb = 6/5
 
     size = qubits #depois variar isso tb
-    #answers = gen_answers(num_answers,2**(size-1))
-    expression = gen_dnf()
+    answers = gen_answers(num_answers,2**(size-1))
 
     s = int((pi/4)*sqrt(2**size))
 
@@ -91,10 +54,9 @@ def test(qubits, num_answers):
         j = random.randint(1,floor(m))
         sum = sum + j
 
-        result = grover(size, oracle, j, expression)
-        #if (result in answers):  # should change to sat verification
-        #    break
-        print(result)
+        result = grover(size, oracle, j, answers)
+        if (result in answers):
+            break
         
         if m == s:
             break
@@ -116,7 +78,7 @@ def upper(n, t):
 
 if __name__ == '__main__':
     
-    tests = 1
+    tests = 100
 
     results = {}
     qubits = 9
