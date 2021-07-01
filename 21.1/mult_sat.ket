@@ -1,0 +1,103 @@
+import random
+from math import sqrt, pi, floor, ceil
+import matplotlib.pyplot as plt
+import numpy as np
+import statistics as st
+import pandas as pd
+
+def gen_answers(amount, max):
+    return [random.randint (1,max) for i in range(amount)]
+
+
+def oracle(x, y, answers):
+    """f(x) = 1 if x == 3 else 0
+
+    U|x⟩|y⟩ = |x⟩|f(x) ⨁ y⟩
+    """
+    for i in answers:
+        ctrl(x, X, y, on_state=i) 
+    """with control(x, on_state=3):
+        X(y)"""
+
+def grover(size, oracle, steps, answers) -> int:
+    """Grover's search algorithm"""
+
+    s = quant(size)
+    aux = X(quant())
+
+    H(s)
+    H(aux)
+
+    for _ in range(steps):
+        oracle(s, aux, answers)
+        with around([H, X], s):
+            ctrl(s[1:], Z, s[0])
+
+
+    return measure(s).get()
+
+def test(qubits, num_answers):
+    m = 1
+    lamb = 6/5
+
+    size = qubits #depois variar isso tb
+    answers = gen_answers(num_answers,2**(size-1))
+
+    s = int((pi/4)*sqrt(2**size))
+
+    sum = 0
+    steps = 0
+
+    while True:
+
+        steps = steps + 1
+        j = random.randint(1,floor(m))
+        sum = sum + j
+
+        result = grover(size, oracle, j, answers)
+        if (result in answers):
+            break
+        
+        if m == s:
+            break
+        m = min(lamb * m, s)
+
+        
+    temp = int((pi/4)*sqrt(2**size/ len(answers) ))
+    return sum  #sum of iterations until answer
+
+def upper(n, t):
+    result = 0
+    try:
+        result = 3 * n/(2 * sqrt((n-t)*t))
+    except ValueError:
+        pass
+    except ZeroDivisionError:
+        print('Error zero div with n=',n,', t=',t)
+    return result
+
+if __name__ == '__main__':
+    
+    tests = 100
+
+    results = {}
+    qubits = 9
+    n = 2**(qubits-1)
+
+    exp = [1 << i for i in range(qubits-1)]
+
+    for t in exp:    
+        for i in range(tests):
+            #colocar 10 execucoes e tirar media/dp
+            #t = random.randint(1,n-1)
+            #t = random.randint(1,5)
+            sum = test(qubits, t)
+            if t not in results:
+                results[t] = [sum]
+            else:
+                results[t].append(sum)
+    
+    df = pd.DataFrame(results)
+    df.to_csv('results.csv', index=False)
+    print(df)
+
