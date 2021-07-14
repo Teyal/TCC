@@ -8,7 +8,7 @@ import pandas as pd
 def gen_answers(amount, max):
     return [random.randint (1,max) for i in range(amount)]
 
-def gen_dnf():
+def gen_cnf():
     return '''
     c example DIMACS-CNF 3-SAT
     p cnf 3 3
@@ -17,7 +17,7 @@ def gen_dnf():
     -1 -2 3 0
     '''
 
-def dnf_to_oracle(var, cla, y, expr):
+def cnf_to_oracle(var, cla, y, expr):
     x_state = [True]*len(var)    # True = positive, False = Negative
     i = 0   # The counter for wich clause is being analysed
 
@@ -36,17 +36,7 @@ def dnf_to_oracle(var, cla, y, expr):
         ctrl(list_var, X, cla[i])
         i += 1 
 
-def oracle(x, y, answers):
-    """f(x) = 1 if x == 3 else 0
-
-    U|x⟩|y⟩ = |x⟩|f(x) ⨁ y⟩
-    """
-    for i in answers:
-        ctrl(x, X, y, on_state=i) 
-    """with control(x, on_state=3):
-        X(y)"""
-
-def grover(size, oracle, steps, expression) -> int:
+def grover(expression, steps) -> int:
     """Grover's search algorithm"""
 
     expr = expression.split('\n')
@@ -54,7 +44,6 @@ def grover(size, oracle, steps, expression) -> int:
     variables = int(variables)
     clauses = int(clauses)
 
-    print(variables)
     var = quant(variables)
     cla = quant(clauses)
     aux = X(quant())
@@ -64,21 +53,21 @@ def grover(size, oracle, steps, expression) -> int:
     H(aux)
 
     for _ in range(steps):
-        with around(dnf_to_oracle(var, cla, aux, expr[3:-1])):
+        with around(cnf_to_oracle, var, cla, aux, expr[3:-1]):
             ctrl(cla, X, aux)
-        with around([H, X], s):
-            ctrl(s[1:], Z, s[0])
+        with around([H, X], var):
+            ctrl(var[1:], Z, var[0])
 
 
-    return measure(s).get()
+    return measure(var).get()
 
-def test(qubits, num_answers):
+def test(qubits):
     m = 1
     lamb = 6/5
 
     size = qubits #depois variar isso tb
     #answers = gen_answers(num_answers,2**(size-1))
-    expression = gen_dnf()
+    expression = gen_cnf()
 
     s = int((pi/4)*sqrt(2**size))
 
@@ -91,17 +80,18 @@ def test(qubits, num_answers):
         j = random.randint(1,floor(m))
         sum = sum + j
 
-        result = grover(size, oracle, j, expression)
-        #if (result in answers):  # should change to sat verification
-        #    break
-        print(result)
+        result = grover(expression, j)
+        if (result in [1, 6, 7]):  # should change to sat verification
+            break
+        #print(result)
         
         if m == s:
             break
         m = min(lamb * m, s)
 
-        
-    temp = int((pi/4)*sqrt(2**size/ len(answers) ))
+    if (result not in [1, 6, 7]):
+        print(f"resultado errado:",result,"com", sum, " iterações")
+    #temp = int((pi/4)*sqrt(2**size/ len(answers) ))
     return sum  #sum of iterations until answer
 
 def upper(n, t):
@@ -116,26 +106,23 @@ def upper(n, t):
 
 if __name__ == '__main__':
     
-    tests = 1
+    tests = 100
 
-    results = {}
-    qubits = 9
+    results = []
+    qubits = 3
     n = 2**(qubits-1)
 
     exp = [1 << i for i in range(qubits-1)]
 
-    for t in exp:    
-        for i in range(tests):
-            #colocar 10 execucoes e tirar media/dp
-            #t = random.randint(1,n-1)
-            #t = random.randint(1,5)
-            sum = test(qubits, t)
-            if t not in results:
-                results[t] = [sum]
-            else:
-                results[t].append(sum)
-    
+    for i in range(tests):
+        #colocar 10 execucoes e tirar media/dp
+        #t = random.randint(1,n-1)
+        #t = random.randint(1,5)
+        sum = test(qubits)
+        results.append(sum)
+
     df = pd.DataFrame(results)
     df.to_csv('results.csv', index=False)
-    print(df)
+    df.hist()
+    plt.show()
 
