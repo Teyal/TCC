@@ -5,22 +5,74 @@ import numpy as np
 import statistics as st
 import pandas as pd
 
+class Verifier():
+    def __init__(self, expression):
+        expr = expression.split('\n')
+        self.expr = expr
+        self.var_size = expr[1].split()[-2]
+
+    def verify(self, answer):
+        anb = [int(x) for x in list('{0:0{width}b}'.format(answer, width=self.var_size))]
+        anb.reverse()
+        valid = True
+        for c in self.expr[2:]:
+            for v in c.split()[:-1]:
+                if '-' in v:
+                    sign = 1
+                else:
+                    sign = 0
+                pos = abs(int(v)) - 1
+                try:
+                    test = anb[pos]
+                except:
+                    print("expression: ",expression)
+                    print("v: ",v)
+                    print("ans:", answer)
+                    print("anb: ",anb)
+                    print("pos: ", pos)
+                if (sign ^ anb[pos]):
+                    break        
+                
+            else:
+                valid = False   
+        return valid
+
 def gen_answers(amount, max):
     return [random.randint (1,max) for i in range(amount)]
+
+def gen_sat(num_var, num_cla):
+    sat = f'''3-SAT autogerated in DIMACS-CNF format
+p cnf {num_var} {num_cla}'''
+
+    for c in range(num_cla):
+        sat += '\n'
+        for i in range(3):
+            v = random.randint(1,num_var)
+            sign = random.randint(0,1)
+            if sign:
+                v = -v
+            sat += f'''{v} '''
+        sat += '0'
+    return sat
+
 
 def gen_cnf():
     return '''
     c example DIMACS-CNF 3-SAT
-    p cnf 3 3
-    1 2 -3 0
-    -1 -2 -3 0
-    -1 -2 3 0
-    '''
-
-def cnf_to_oracle(var, cla, y, expr):
+    p cnf 3  3
+-1 -2 3 0
+1 -2 -3 0
+1 2 -3 0'''
+    #-2 -3 0
+    #-2 3 0
+    #'''
+temp_dump = []
+def cnf_to_oracle(var, cla, expr):
     x_state = [True]*len(var)    # True = positive, False = Negative
     i = 0   # The counter for wich clause is being analysed
+    offset = len(var) # pedir lista revertida
 
+    X(cla)
     for c in expr:    # accessing only the clauses
         list_var = []   # list variables being used in a single clause   
         for v in c.split()[:-1]:    # ignoring the 0 at the end
@@ -28,21 +80,16 @@ def cnf_to_oracle(var, cla, y, expr):
                 state = False
             else:
                 state = True
-            var_num = abs(int(v)) - 1    # -1 for easier access on the list
+            var_num = offset - abs(int(v)) - 1    # -1 for easier access on the list
             if state != x_state[var_num]:
-                X(var)
+                X(var[var_num])
                 x_state[var_num] = not x_state[var_num]
             list_var.append(var[var_num])
         ctrl(list_var, X, cla[i])
         i += 1 
 
-def grover(expression, steps) -> int:
+def grover(variables, clauses, expr, steps) -> int:
     """Grover's search algorithm"""
-
-    expr = expression.split('\n')
-    _,_,variables, clauses = expr[2].split()
-    variables = int(variables)
-    clauses = int(clauses)
 
     var = quant(variables)
     cla = quant(clauses)
@@ -53,46 +100,49 @@ def grover(expression, steps) -> int:
     H(aux)
 
     for _ in range(steps):
-        with around(cnf_to_oracle, var, cla, aux, expr[3:-1]):
+        with around(cnf_to_oracle, var, cla, expr[3:]):
             ctrl(cla, X, aux)
         with around([H, X], var):
             ctrl(var[1:], Z, var[0])
 
-
     return measure(var).get()
 
-def test(qubits):
+def test(expression, qubits):
     m = 1
     lamb = 6/5
 
-    size = qubits #depois variar isso tb
+    #size = qubits #depois variar isso tb
     #answers = gen_answers(num_answers,2**(size-1))
-    expression = gen_cnf()
+    
+    veri = Verifier(expression)
+
+    expr = expression.split('\n')
+    _,_,vari, clau = expr[1].split()
+    size = vari = int(vari)
+    clau = int(clau)
 
     s = int((pi/4)*sqrt(2**size))
 
     sum = 0
     steps = 0
-
+    tries = []
     while True:
-
+        
         steps = steps + 1
-        j = random.randint(1,floor(m))
+        #j = random.randint(1,floor(m))
+        j = s
         sum = sum + j
 
-        result = grover(expression, j)
-        if (result in [1, 6, 7]):  # should change to sat verification
-            break
-        #print(result)
+        result = grover(vari, clau, expr, j)
+        tries.append(result)
+        #if veri.verify(result):
+        #    break
         
-        if m == s:
+        if m != s: #i reverted it for a test
             break
         m = min(lamb * m, s)
 
-    if (result not in [1, 6, 7]):
-        print(f"resultado errado:",result,"com", sum, " iterações")
-    #temp = int((pi/4)*sqrt(2**size/ len(answers) ))
-    return sum  #sum of iterations until answer
+    return result
 
 def upper(n, t):
     result = 0
@@ -104,25 +154,41 @@ def upper(n, t):
         print('Error zero div with n=',n,', t=',t)
     return result
 
+
+
 if __name__ == '__main__':
     
-    tests = 100
+    tests = 1000
+    max_qubits = 14
 
     results = []
-    qubits = 3
+    qubits = 10
     n = 2**(qubits-1)
 
-    exp = [1 << i for i in range(qubits-1)]
+    expression = gen_cnf()
+    #exp = [1 << i for i in range(qubits-1)]
 
+    max_cla = max_qubits - 3
     for i in range(tests):
-        #colocar 10 execucoes e tirar media/dp
-        #t = random.randint(1,n-1)
-        #t = random.randint(1,5)
-        sum = test(qubits)
-        results.append(sum)
+        
+        
+        clasules = np.random.randint(3,11)
+        max_var  = 14 - clasules
+        variables = np.random.randint(3,max_var)
+        print(f"{i}:[{variables} {clasules}]")
+        expression = gen_sat(variables,clasules)
+        results.append([clasules/variables,test(expression, qubits)])
 
-    df = pd.DataFrame(results)
+    #v = Verifier(expression)
+    #r = []
+    #_,_,size, _ = expression.split('\n')[1].split()
+    #s = 2**int(size)
+    #for i in range(s):
+    #    if v.verify(i):
+    #        r.append(i)
+    #print(r)
+    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações'])
     df.to_csv('results.csv', index=False)
-    df.hist()
+    #df.hist()
+    df.plot.scatter(x="Clau/var", y="Iterações")
     plt.show()
-

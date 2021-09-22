@@ -1,0 +1,7672 @@
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
+LABEL @entry
+	ALLOC	q0
+	ALLOC	q1
+	ALLOC	q2
+	ALLOC	q3
+	ALLOC	q4
+	ALLOC	q5
+	ALLOC	q6
+	X	q6
+	H	q0
+	H	q1
+	H	q2
+	H	q3
+	H	q4
+	H	q5
+	H	q6
+	X	q3
+	X	q4
+	X	q5
+	X	q1
+	X	q0
+	CTRL [q1, q0, q2],	X	q3
+	X	q1
+	X	q2
+	CTRL [q1, q0, q2],	X	q4
+	X	q0
+	X	q2
+	CTRL [q1, q0, q2],	X	q5
+	CTRL [q3, q4, q5],	X	q6
+	CTRL [q1, q0, q2],	X	q5
+	X	q2
+	X	q0
+	CTRL [q1, q0, q2],	X	q4
+	X	q2
+	X	q1
+	CTRL [q1, q0, q2],	X	q3
+	X	q0
+	X	q1
+	X	q5
+	X	q4
+	X	q3
+	H	q0
+	H	q1
+	H	q2
+	X	q0
+	X	q1
+	X	q2
+	CTRL [q1, q2],	Z	q0
+	X	q2
+	X	q1
+	X	q0
+	H	q2
+	H	q1
+	H	q0
+	MEASURE	i0	[q0, q1, q2]
+=========================
