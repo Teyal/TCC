@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "crossover"
+name = "nightly"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Teo H Gallarza <teogallarza@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-matplotlib = "^3.5.2"
+ket-lang = {url = "https://gitlab.com/quantum-ket/ket/-/jobs/artifacts/master/raw/wheelhouse/ket_lang-0.4.0.dev2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl?job=wheelhouse"}
 numpy = "^1.22.4"
 pandas = "^1.4.2"
+matplotlib = "^3.5.2"
 PyQt5 = "^5.15.6"
 qubox-ufsc-quantuloop-client = {url = "https://qubox.ufsc.br:4242/download/qubox_ufsc_quantuloop_client-0.1.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"}
-ket-lang = "^0.3.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

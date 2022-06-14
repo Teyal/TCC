@@ -93,6 +93,7 @@ def grover(variables, clauses, expr, steps) -> int:
     return measure(var).value
 
 def test(expression, qubits):
+    print('test')
     m = 1
     lamb = 6/5
 
@@ -105,27 +106,29 @@ def test(expression, qubits):
 
     s = int((pi/4)*sqrt(2**size))
 
-    sum = 0
+    ite = 0
     steps = 0
     tries = []
     while True:
+        print(steps)
         
         steps = steps + 1
         #j = random.randint(1,floor(m))
         j = s
-        sum = sum + j
+        ite = ite + j
 
         result = grover(vari, clau, expr, j)
         tries.append(result)
         if veri.verify(result):
-            print('achou')
+            find = True
             break
         
         if m == s:
+            find = False
             break
         m = min(lamb * m, s)
 
-    return result
+    return ite, find
 
 def upper(n, t):
     result = 0
@@ -140,22 +143,23 @@ def upper(n, t):
 
 if __name__ == '__main__':
     
-    tests = 50
+    df = pd.read_csv('src/sats.csv')
+    sats = df.values.tolist()
+    tests = len(sats)
 
     results = []
-    qubits = 14
+    qubits = 27
     n = 2**(qubits-1)
-
-    max_cla = qubits - 3
-    for i in range(tests):
-        clasules = np.random.randint(3,max_cla)
-        max_var  = qubits - clasules
-        variables = np.random.randint(3,max_var)
-        print(f"{i}:[{variables} {clasules}]")
-        expression = gen_sat(variables,clasules)
-        results.append([clasules/variables,test(expression, qubits)])
-
-    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações'])
-    df.to_csv('results.csv', index=False)
-    df.plot.scatter(x="Clau/var", y="Iterações")
-    plt.show()
+    
+    for _,sat in sats:
+        temp = sat.split('\n')[1]
+        _, _, variables, clasules = temp.split()
+        expression = gen_sat(int(variables),int(clasules))
+        ite, find = test(sat, qubits)
+        results.append([clasules/variables,ite, find])
+#
+    #df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
+    #colors = {True:'blue', False:'red'}
+    #df.to_csv('results.csv', index=False)
+    #df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
+    #plt.show()

@@ -1,0 +1,166 @@
+import random
+from math import sqrt, pi, floor, ceil
+import matplotlib.pyplot as plt
+import numpy as np
+import statistics as st
+import pandas as pd
+
+class Verifier():
+    def __init__(self, expression):
+        expr = expression.split('\n')
+        self.expr = expr
+        self.var_size = expr[1].split()[-2]
+
+    def verify(self, answer):
+        anb = [int(x) for x in list('{0:0{width}b}'.format(answer, width=self.var_size))]
+        anb.reverse()
+        valid = True
+        for c in self.expr[2:]:
+            for v in c.split()[:-1]:
+                if '-' in v:
+                    sign = 1
+                else:
+                    sign = 0
+                pos = abs(int(v)) - 1
+                try:
+                    test = anb[pos]
+                except:
+                    print("expression: ",expression)
+                    print("v: ",v)
+                    print("ans:", answer)
+                    print("anb: ",anb)
+                    print("pos: ", pos)
+                if (sign ^ anb[pos]):
+                    break        
+                
+            else:
+                valid = False   
+        return valid
+
+def gen_sat(num_var, num_cla):
+    sat = f'''3-SAT autogerated in DIMACS-CNF format
+p cnf {num_var} {num_cla}'''
+
+    for c in range(num_cla):
+        sat += '\n'
+        for i in range(3):
+            v = random.randint(1,num_var)
+            sign = random.randint(0,1)
+            if sign:
+                v = -v
+            sat += f'''{v} '''
+        sat += '0'
+    return sat
+
+def cnf_to_oracle(var, cla, expr):
+    x_state = [True]*len(var)    # True = positive, False = Negative
+    i = 0   # The counter for wich clause is being analysed
+    offset = len(var) # pedir lista revertida
+
+    X(cla)
+    for c in expr:    # accessing only the clauses
+        list_var = []   # list variables being used in a single clause   
+        for v in c.split()[:-1]:    # ignoring the 0 at the end
+            if '-' in v:
+                state = False
+            else:
+                state = True
+            var_num = offset - abs(int(v)) - 1    # -1 for easier access on the list
+            if state != x_state[var_num]:
+                X(var[var_num])
+                x_state[var_num] = not x_state[var_num]
+            list_var.append(var[var_num])
+        ctrl(list_var, X, cla[i])
+        i += 1 
+
+def grover(variables, clauses, expr, steps) -> int:
+    """Grover's search algorithm"""
+
+    var = quant(variables)
+    cla = quant(clauses)
+    aux = X(quant())
+
+    H(var)
+    H(cla)
+    H(aux)
+
+    for _ in range(steps):
+        with around(cnf_to_oracle, var, cla, expr[3:]):
+            ctrl(cla, X, aux)
+        with around([H, X], var):
+            ctrl(var[1:], Z, var[0])
+
+    return measure(var).value
+
+def test(expression, qubits):
+    print('test')
+    m = 1
+    lamb = 6/5
+
+    veri = Verifier(expression)
+
+    expr = expression.split('\n')
+    _,_,vari, clau = expr[1].split()
+    size = vari = int(vari)
+    clau = int(clau)
+
+    s = int((pi/4)*sqrt(2**size))
+
+    ite = 0
+    steps = 0
+    tries = []
+    while True:
+        print(steps)
+        
+        steps = steps + 1
+        #j = random.randint(1,floor(m))
+        j = s
+        ite = ite + j
+
+        result = grover(vari, clau, expr, j)
+        tries.append(result)
+        if veri.verify(result):
+            find = True
+            break
+        
+        if m == s:
+            find = False
+            break
+        m = min(lamb * m, s)
+
+    return ite, find
+
+def upper(n, t):
+    result = 0
+    try:
+        result = 3 * n/(2 * sqrt((n-t)*t))
+    except ValueError:
+        pass
+    except ZeroDivisionError:
+        print('Error zero div with n=',n,', t=',t)
+    return result
+
+
+if __name__ == '__main__':
+    
+    tests = 30
+
+    results = []
+    qubits = 27
+    n = 2**(qubits-1)
+
+    max_cla = qubits - 3    
+    for i in range(tests):
+        clasules = np.random.randint(3,max_cla)
+        max_var  = qubits - clasules
+        variables = np.random.randint(3,max_var)
+        print(f"{i}:[{clasules} {variables}]")
+        expression = gen_sat(variables,clasules)
+        ite, find = test(expression, qubits)
+        results.append([clasules/variables,ite, find])
+
+    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
+    colors = {True:'blue', False:'red'}
+    df.to_csv('results.csv', index=False)
+    df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
+    plt.show()

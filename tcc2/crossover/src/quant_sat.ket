@@ -4,6 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import statistics as st
 import pandas as pd
+import os
+from quantuloop import qubox_ufsc
+qubox_ufsc.set_token('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRdWFudHVsb29wIFNlcnZlciAoUUNMYWJzKSIsInN1YiI6IlF1YW50dWxvb3AgU2VydmVyIFVTRVIgdG9rZW4iLCJhdWQiOiJ1c2VyIiwiZXhwIjoxNjYyOTAxMjI0LCJuYmYiOjE2NTUxMjUyMjQsImlhdCI6MTY1NTEyNTIyNCwibmFtZSI6IlRlbyBIYWVzZXIgR2FsbGFyemEiLCJlbWFpbCI6InRlb2dhbGxhcnphQGdtYWlsLmNvbSJ9.VzLICW6r8x1bAmfr0TGEgDGgv1y9FwE3G2_X3VIfLXQ')
+
+SIZE = os.getenv('SIZE')
 
 class Verifier():
     def __init__(self, expression):
@@ -37,9 +42,6 @@ class Verifier():
                 valid = False   
         return valid
 
-def gen_answers(amount, max):
-    return [random.randint (1,max) for i in range(amount)]
-
 def gen_sat(num_var, num_cla):
     sat = f'''3-SAT autogerated in DIMACS-CNF format
 p cnf {num_var} {num_cla}'''
@@ -55,18 +57,6 @@ p cnf {num_var} {num_cla}'''
         sat += '0'
     return sat
 
-
-def gen_cnf():
-    return '''
-    c example DIMACS-CNF 3-SAT
-    p cnf 3  3
--1 -2 3 0
-1 -2 -3 0
-1 2 -3 0'''
-    #-2 -3 0
-    #-2 3 0
-    #'''
-temp_dump = []
 def cnf_to_oracle(var, cla, expr):
     x_state = [True]*len(var)    # True = positive, False = Negative
     i = 0   # The counter for wich clause is being analysed
@@ -108,12 +98,10 @@ def grover(variables, clauses, expr, steps) -> int:
     return measure(var).value
 
 def test(expression, qubits):
+    print('test')
     m = 1
     lamb = 6/5
 
-    #size = qubits #depois variar isso tb
-    #answers = gen_answers(num_answers,2**(size-1))
-    
     veri = Verifier(expression)
 
     expr = expression.split('\n')
@@ -123,26 +111,29 @@ def test(expression, qubits):
 
     s = int((pi/4)*sqrt(2**size))
 
-    sum = 0
+    ite = 0
     steps = 0
     tries = []
     while True:
+        print(steps)
         
         steps = steps + 1
         #j = random.randint(1,floor(m))
         j = s
-        sum = sum + j
+        ite = ite + j
 
         result = grover(vari, clau, expr, j)
         tries.append(result)
-        #if veri.verify(result):
-        #    break
+        if veri.verify(result):
+            find = True
+            break
         
-        if m != s: #i reverted it for a test
+        if m == s:
+            find = False
             break
         m = min(lamb * m, s)
 
-    return result
+    return ite, find
 
 def upper(n, t):
     result = 0
@@ -155,40 +146,33 @@ def upper(n, t):
     return result
 
 
-
 if __name__ == '__main__':
     
-    tests = 100
-    max_qubits = 14
+    df = pd.read_csv('../sats.csv')
+    sats = df.values.tolist()
+    tests = len(sats)
 
     results = []
-    qubits = 10
+    qubits = SIZE
     n = 2**(qubits-1)
 
-    expression = gen_cnf()
-    #exp = [1 << i for i in range(qubits-1)]
+    #max_cla = qubits - 3    
+    #for i in range(tests):
+    #    clasules = np.random.randint(3,max_cla)
+    #    max_var  = qubits - clasules
+    #    variables = np.random.randint(3,max_var)
+    #    print(f"{i}:[{clasules} {variables}]")
+    #    expression = gen_sat(variables,clasules)
+    for _,sat in sats:
+        print(expression) 
+        temp = sat.split('\n')[1]
+        _, _, variables, clasules = temp.split()
+        expression = gen_sat(int(variables),int(clasules))
+        ite, find = test(expression, qubits)
+        results.append([clasules/variables,ite, find])
 
-    max_cla = max_qubits - 3
-    for i in range(tests):
-        
-        
-        clasules = np.random.randint(3,11)
-        max_var  = 14 - clasules
-        variables = np.random.randint(3,max_var)
-        print(f"{i}:[{variables} {clasules}]")
-        expression = gen_sat(variables,clasules)
-        results.append([clasules/variables,test(expression, qubits)])
-
-    #v = Verifier(expression)
-    #r = []
-    #_,_,size, _ = expression.split('\n')[1].split()
-    #s = 2**int(size)
-    #for i in range(s):
-    #    if v.verify(i):
-    #        r.append(i)
-    #print(r)
-    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações'])
+    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
+    colors = {True:'blue', False:'red'}
     df.to_csv('results.csv', index=False)
-    #df.hist()
-    df.plot.scatter(x="Clau/var", y="Iterações")
+    df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
     plt.show()
