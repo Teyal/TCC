@@ -1,0 +1,54 @@
+l0:
+	ALLOC       q0
+	ALLOC       q1
+	ALLOC       q2
+	H           q0
+	H           q1
+	H           q2
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	MEASURE     i0
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	DUMP        d0
+	HALT
+
+===========================
+l0:
+	ALLOC       q0
+	ALLOC       q1
+	ALLOC       q2
+	H           q0
+	H           q1
+	H           q2
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	MEASURE     i0
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	DUMP        d0
+	HALT
+
+===========================
+l0:
+	ALLOC       q0
+	ALLOC       q1
+	ALLOC       q2
+	H           q0
+	H           q1
+	H           q2
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	MEASURE     i0
+	PUSH        q0
+	PUSH        q1
+	PUSH        q2
+	DUMP        d0
+	HALT
+
+===========================

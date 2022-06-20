@@ -20,11 +20,11 @@ def gen_ranges(ranges, size = 23, num_values = 3):
         for i in range(num_values):
             possible = [(n,c,v) for n,c,v in nums if n>mi and n<ma]
         temp = []
-        finals.extend(sample(possible, k=3))
+        finals.extend(sample(possible, k=1))
     return finals
 min, max = 0, 0.5
 ranges = [[min+0.5*i, max+0.5*i] for i in range(10)]
 
-values = gen_ranges(ranges,size=SIZE)
+values = gen_ranges(ranges,int(SIZE))
 df = pd.DataFrame(values, columns=['Clau/var', 'Cla','Var'])
 df.to_csv('src/range_values.csv', index=False)

@@ -98,7 +98,6 @@ def grover(variables, clauses, expr, steps) -> int:
     return measure(var).value
 
 def test(expression, qubits):
-    print('test')
     m = 1
     lamb = 6/5
 
@@ -115,7 +114,6 @@ def test(expression, qubits):
     steps = 0
     tries = []
     while True:
-        print(steps)
         
         steps = steps + 1
         #j = random.randint(1,floor(m))
@@ -153,7 +151,7 @@ if __name__ == '__main__':
     tests = len(sats)
 
     results = []
-    qubits = SIZE
+    qubits = int(SIZE)
     n = 2**(qubits-1)
 
     #max_cla = qubits - 3    
@@ -164,12 +162,12 @@ if __name__ == '__main__':
     #    print(f"{i}:[{clasules} {variables}]")
     #    expression = gen_sat(variables,clasules)
     for _,sat in sats:
-        print(expression) 
         temp = sat.split('\n')[1]
         _, _, variables, clasules = temp.split()
         expression = gen_sat(int(variables),int(clasules))
         ite, find = test(expression, qubits)
-        results.append([clasules/variables,ite, find])
+        print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
+        results.append([int(clasules)/int(variables),ite, find])
 
     df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
     colors = {True:'blue', False:'red'}
