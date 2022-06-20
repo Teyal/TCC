@@ -143,7 +143,7 @@ def upper(n, t):
 
 if __name__ == '__main__':
     
-    df = pd.read_csv('src/sats.csv')
+    df = pd.read_csv('../sats.csv')
     sats = df.values.tolist()
     tests = len(sats)
 
@@ -154,12 +154,13 @@ if __name__ == '__main__':
     for _,sat in sats:
         temp = sat.split('\n')[1]
         _, _, variables, clasules = temp.split()
-        expression = gen_sat(int(variables),int(clasules))
+        #expression = gen_sat(int(variables),int(clasules))
         ite, find = test(sat, qubits)
-        results.append([clasules/variables,ite, find])
-#
-    #df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
-    #colors = {True:'blue', False:'red'}
-    #df.to_csv('results.csv', index=False)
-    #df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
-    #plt.show()
+        print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
+        results.append([int(clasules)/int(variables),ite, find])
+
+    df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
+    colors = {True:'blue', False:'red'}
+    df.to_csv('results.csv', index=False)
+    df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
+    plt.show()

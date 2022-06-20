@@ -20,7 +20,10 @@ def gen_ranges(ranges, size = 23, num_values = 3):
         for i in range(num_values):
             possible = [(n,c,v) for n,c,v in nums if n>mi and n<ma]
         temp = []
-        finals.extend(sample(possible, k=1))
+        if len(possible) < 3:
+            finals.extend(possible)    
+        else:
+            finals.extend(sample(possible, k=3))
     return finals
 min, max = 0, 0.5
 ranges = [[min+0.5*i, max+0.5*i] for i in range(10)]

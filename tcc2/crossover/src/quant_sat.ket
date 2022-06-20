@@ -164,8 +164,7 @@ if __name__ == '__main__':
     for _,sat in sats:
         temp = sat.split('\n')[1]
         _, _, variables, clasules = temp.split()
-        expression = gen_sat(int(variables),int(clasules))
-        ite, find = test(expression, qubits)
+        ite, find = test(sat, qubits)
         print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
         results.append([int(clasules)/int(variables),ite, find])
 
