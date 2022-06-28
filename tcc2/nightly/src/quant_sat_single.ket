@@ -5,12 +5,9 @@ import numpy as np
 import statistics as st
 import pandas as pd
 import os
-from quantuloop import qubox_ufsc
-qubox_ufsc.set_token('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRdWFudHVsb29wIFNlcnZlciAoUUNMYWJzKSIsInN1YiI6IlF1YW50dWxvb3AgU2VydmVyIFVTRVIgdG9rZW4iLCJhdWQiOiJ1c2VyIiwiZXhwIjoxNjYyOTAxMjI0LCJuYmYiOjE2NTUxMjUyMjQsImlhdCI6MTY1NTEyNTIyNCwibmFtZSI6IlRlbyBIYWVzZXIgR2FsbGFyemEiLCJlbWFpbCI6InRlb2dhbGxhcnphQGdtYWlsLmNvbSJ9.VzLICW6r8x1bAmfr0TGEgDGgv1y9FwE3G2_X3VIfLXQ')
 
 SIZE = os.getenv('SIZE')
-START = os.getenv('START')
-DIRECT = os.getenv('DIRECT')
+NUM = os.getenv('NUM')
 
 class Verifier():
     def __init__(self, expression):
@@ -100,6 +97,7 @@ def grover(variables, clauses, expr, steps) -> int:
     return measure(var).value
 
 def test(expression, qubits):
+    print('test')
     m = 1
     lamb = 6/5
 
@@ -117,15 +115,15 @@ def test(expression, qubits):
     tries = set()
     while True:
         j = random.randint(1,floor(m))
+        print(f'{steps}, {j}, {ite}')
         if steps > 6: 
             while j in tries:
                 j = random.randint(1,floor(m))
         tries.add(j)
         ite = ite + j
-        print(f'{j}, {ite}')
 
         result = grover(vari, clau, expr, j)
-        #tries.append(result)
+        tries.append(result)
         if veri.verify(result):
             find = True
             break
@@ -159,26 +157,19 @@ if __name__ == '__main__':
     qubits = int(SIZE)
     n = 2**(qubits-1)
 
-    #max_cla = qubits - 3    
-    #for i in range(tests):
-    #    clasules = np.random.randint(3,max_cla)
-    #    max_var  = qubits - clasules
-    #    variables = np.random.randint(3,max_var)
-    #    print(f"{i}:[{clasules} {variables}]")
-    #    expression = gen_sat(variables,clasules)
-    for _,sat in sats[int(START)::int(DIRECT)]:
-        temp = sat.split('\n')[1]
-        _, _, variables, clasules = temp.split()
-        print(f'[{int(clasules)}/{int(variables)}]')
-        ite, find = test(sat, qubits)
-        print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
-        f = open(f"partial_new_{START}.txt","a")
-        f.write(f"{int(clasules)/int(variables)},{ite},{find}\n")
-        f.close()
-        results.append([int(clasules)/int(variables),ite, find])
+    _, sat = sats[int(NUM)]
+    print(sat)
+    temp = sat.split('\n')[1]
+    _, _, variables, clasules = temp.split()
+    ite, find = test(sat, qubits)
+    print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
+    f = open(f"partial{int(NUM)}_single.txt","a")
+    f.write(f"{int(clasules)/int(variables)},{ite},{find}\n")
+    f.close()
+    results.append([int(clasules)/int(variables),ite, find])
 
     df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
     colors = {True:'blue', False:'red'}
-    df.to_csv(f"results_new_{START}.csv", index=False)
+    df.to_csv(f'results_single_{int(NUM)}.csv', index=False)
     df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
     plt.show()

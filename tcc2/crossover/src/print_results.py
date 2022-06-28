@@ -16,7 +16,7 @@ def up_bound(t, n=256):
 
 if __name__ == '__main__':
 
-    results = pd.read_csv('../results.csv').transpose()
+    results = pd.read_csv('../final_new.csv').transpose()
 
     total = results.transpose().mean()
     total.plot(kind = 'bar', fc=(0,0,1,0.5))

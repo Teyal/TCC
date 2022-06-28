@@ -29,5 +29,6 @@ min, max = 0, 0.5
 ranges = [[min+0.5*i, max+0.5*i] for i in range(10)]
 
 values = gen_ranges(ranges,int(SIZE))
-df = pd.DataFrame(values, columns=['Clau/var', 'Cla','Var'])
-df.to_csv('src/range_values.csv', index=False)
+print(values)
+#df = pd.DataFrame(values, columns=['Clau/var', 'Cla','Var'])
+#df.to_csv('src/range_values.csv', index=False)
