@@ -172,13 +172,13 @@ if __name__ == '__main__':
         print(f'[{int(clasules)}/{int(variables)}]')
         ite, find = test(sat, qubits)
         print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
-        f = open(f"partial_new_{START}.txt","a")
+        f = open(f"output/partial_new_{START}.txt","a")
         f.write(f"{int(clasules)/int(variables)},{ite},{find}\n")
         f.close()
         results.append([int(clasules)/int(variables),ite, find])
 
     df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
     colors = {True:'blue', False:'red'}
-    df.to_csv(f"results_new_{START}.csv", index=False)
+    df.to_csv(f"output/results_new_{START}.csv", index=False)
     df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
     plt.show()

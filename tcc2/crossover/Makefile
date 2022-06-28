@@ -12,5 +12,5 @@ print:
 
 .PHONY: gen
 gen:
-	poetry run python src/gen_sats_ranges.py
-	poetry run python src/gen_sat.py
+	poetry run python sats/gen_sats_ranges.py
+	poetry run python sats/gen_sat.py

@@ -1,0 +1,10 @@
+c 3-SAT autogerated in DIMACS-CNF format
+p cnf 11 8
+-5 -9 4 0
+1 -6 -9 0
+-9 -2 3 0
+-7 -11 -6 0
+3 1 -2 0
+-10 11 -3 0
+-5 -2 11 0
+-8 11 9 0
