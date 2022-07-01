@@ -1,5 +1,0 @@
-q = quant(3)
-H(q)
-measure(q)
-d = dump(q)
-d.show()

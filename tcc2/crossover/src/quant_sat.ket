@@ -7,10 +7,12 @@ import pandas as pd
 import os
 from quantuloop import qubox_ufsc
 qubox_ufsc.set_token('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRdWFudHVsb29wIFNlcnZlciAoUUNMYWJzKSIsInN1YiI6IlF1YW50dWxvb3AgU2VydmVyIFVTRVIgdG9rZW4iLCJhdWQiOiJ1c2VyIiwiZXhwIjoxNjYyOTAxMjI0LCJuYmYiOjE2NTUxMjUyMjQsImlhdCI6MTY1NTEyNTIyNCwibmFtZSI6IlRlbyBIYWVzZXIgR2FsbGFyemEiLCJlbWFpbCI6InRlb2dhbGxhcnphQGdtYWlsLmNvbSJ9.VzLICW6r8x1bAmfr0TGEgDGgv1y9FwE3G2_X3VIfLXQ')
+qubox_ufsc.set_backend('pbwd')
+qubox_ufsc.set_presicion('double')
 
-SIZE = os.getenv('SIZE')
-START = os.getenv('START')
-DIRECT = os.getenv('DIRECT')
+SIZE = int(os.getenv('SIZE'))
+START = int(os.getenv('START'))
+DIRECT = int(os.getenv('DIRECT'))
 
 class Verifier():
     def __init__(self, expression):
@@ -110,26 +112,29 @@ def test(expression, qubits):
     size = vari = int(vari)
     clau = int(clau)
 
-    s = int((pi/4)*sqrt(2**size))
+    #s = int((pi/4)*sqrt(2**size))
+    s = int((pi/4)*(2**size))
 
     ite = 0
     steps = 0
     tries = set()
     while True:
-        j = random.randint(1,floor(m))
-        if steps > 6: 
-            while j in tries:
-                j = random.randint(1,floor(m))
-        tries.add(j)
+        #j = random.randint(1,floor(m))
+        #if steps > 6: 
+        #    while j in tries:
+        #        j = random.randint(1,floor(m))
+        #tries.add(j)
+        j = s
         ite = ite + j
         print(f'{j}, {ite}')
 
         result = grover(vari, clau, expr, j)
-        #tries.append(result)
+        print(f'{bin(result)}')
         if veri.verify(result):
             find = True
             break
         
+        print(f'm:{m},s:{s}')
         if m == s:
             find = False
             break
@@ -156,7 +161,7 @@ if __name__ == '__main__':
     tests = len(sats)
 
     results = []
-    qubits = int(SIZE)
+    qubits = SIZE
     n = 2**(qubits-1)
 
     #max_cla = qubits - 3    
@@ -166,12 +171,12 @@ if __name__ == '__main__':
     #    variables = np.random.randint(3,max_var)
     #    print(f"{i}:[{clasules} {variables}]")
     #    expression = gen_sat(variables,clasules)
-    for _,sat in sats[int(START)::int(DIRECT)]:
+    for _,sat in sats[START::DIRECT]:
         temp = sat.split('\n')[1]
         _, _, variables, clasules = temp.split()
         print(f'[{int(clasules)}/{int(variables)}]')
         ite, find = test(sat, qubits)
-        print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}')
+        print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}, {find}')
         f = open(f"output/partial_new_{START}.txt","a")
         f.write(f"{int(clasules)/int(variables)},{ite},{find}\n")
         f.close()

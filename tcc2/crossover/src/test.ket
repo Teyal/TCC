@@ -1,0 +1,101 @@
+import random
+from math import sqrt, pi, floor, ceil
+import matplotlib.pyplot as plt
+import numpy as np
+import statistics as st
+import pandas as pd
+from quantuloop import qubox_ufsc
+qubox_ufsc.set_token('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRdWFudHVsb29wIFNlcnZlciAoUUNMYWJzKSIsInN1YiI6IlF1YW50dWxvb3AgU2VydmVyIFVTRVIgdG9rZW4iLCJhdWQiOiJ1c2VyIiwiZXhwIjoxNjYyOTAxMjI0LCJuYmYiOjE2NTUxMjUyMjQsImlhdCI6MTY1NTEyNTIyNCwibmFtZSI6IlRlbyBIYWVzZXIgR2FsbGFyemEiLCJlbWFpbCI6InRlb2dhbGxhcnphQGdtYWlsLmNvbSJ9.VzLICW6r8x1bAmfr0TGEgDGgv1y9FwE3G2_X3VIfLXQ')
+
+
+class Verifier():
+    def __init__(self, expression):
+        expr = expression.split('\n')
+        self.expr = expr
+        self.var_size = expr[1].split()[-2]
+
+    def verify(self, answer):
+        anb = [int(x) for x in list('{0:0{width}b}'.format(answer, width=self.var_size))]
+        anb.reverse()
+        valid = True
+        for c in self.expr[2:]:
+            for v in c.split()[:-1]:
+                if '-' in v:
+                    sign = 1
+                else:
+                    sign = 0
+                pos = abs(int(v)) - 1
+                try:
+                    test = anb[pos]
+                except:
+                    print("expression: ",expression)
+                    print("v: ",v)
+                    print("ans:", answer)
+                    print("anb: ",anb)
+                    print("pos: ", pos)
+                if (sign ^ anb[pos]):
+                    break        
+                
+            else:
+                valid = False   
+        return valid
+
+def cnf_to_oracle(var, cla, expr):
+    x_state = [True]*len(var)    # True = positive, False = Negative
+    i = 0   # The counter for wich clause is being analysed
+    offset = len(var) # pedir lista revertida
+
+    X(cla)
+    for c in expr:    # accessing only the clauses
+        list_var = []   # list variables being used in a single clause   
+        for v in c.split()[:-1]:    # ignoring the 0 at the end
+            if '-' in v:
+                state = False
+            else:
+                state = True
+            var_num = offset - abs(int(v)) - 1 # -1 for easier access on the list
+            if state != x_state[var_num]:
+                X(var[var_num])
+                x_state[var_num] = not x_state[var_num]
+            list_var.append(var[var_num])
+        ctrl(list_var, X, cla[i])
+        i += 1
+
+def grover(variables, clauses, expr, steps) -> int:
+    """Grover's search algorithm"""
+
+    var = quant(variables)
+    cla = quant(clauses)
+    aux = X(quant())
+
+    H(var)
+    #H(cla)
+    #H(aux)
+
+    d = []
+    for _ in range(steps):
+        with around(cnf_to_oracle, var, cla, expr[2:]):
+            ctrl(cla, X, aux)
+        with around([H, X], var):
+            ctrl(var[1:], Z, var[0])
+        #print('a')
+        #d.append(dump(var))
+    
+    return measure(var).value
+
+df = pd.read_csv('../sats.csv')
+sats = df.values.tolist()
+_, expression = sats[-4]
+
+veri = Verifier(expression)
+for i in range(20):
+    expr = expression.split('\n')
+    _,_,vari, clau = expr[1].split()
+    size = vari = int(vari)
+    clau = int(clau)
+    #print(vari)
+    #print(clau)
+
+    result = grover(vari, clau, expr, i)
+    
+    print(bin(result))

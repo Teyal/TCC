@@ -5,9 +5,11 @@ import numpy as np
 import statistics as st
 import pandas as pd
 import os
+#from quantuloop import qubox_ufsc
+#qubox_ufsc.set_token('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJRdWFudHVsb29wIFNlcnZlciAoUUNMYWJzKSIsInN1YiI6IlF1YW50dWxvb3AgU2VydmVyIFVTRVIgdG9rZW4iLCJhdWQiOiJ1c2VyIiwiZXhwIjoxNjYyOTAxMjI0LCJuYmYiOjE2NTUxMjUyMjQsImlhdCI6MTY1NTEyNTIyNCwibmFtZSI6IlRlbyBIYWVzZXIgR2FsbGFyemEiLCJlbWFpbCI6InRlb2dhbGxhcnphQGdtYWlsLmNvbSJ9.VzLICW6r8x1bAmfr0TGEgDGgv1y9FwE3G2_X3VIfLXQ')
 
-SIZE =   int(os.getenv('SIZE'))
-START =  int(os.getenv('START'))
+SIZE = int(os.getenv('SIZE'))
+START = int(os.getenv('START'))
 DIRECT = int(os.getenv('DIRECT'))
 
 class Verifier():
@@ -111,21 +113,13 @@ def test(expression, qubits):
     s = int((pi/4)*sqrt(2**size))
 
     ite = 0
-    steps = 0
-    tries = set()
     while True:
-        j = random.randint(1,floor(m))
-        if steps > 6: 
-            while j in tries:
-                j = random.randint(1,floor(m))
-        tries.add(j)
-        #j = s
+        j = s
         ite = ite + j
         print(f'{j}, {ite}')
 
         result = grover(vari, clau, expr, j)
         print(f'{bin(result)}')
-        #tries.append(result)
         if veri.verify(result):
             find = True
             break
@@ -135,7 +129,6 @@ def test(expression, qubits):
             find = False
             break
         m = min(lamb * m, s)
-        steps = steps + 1
 
     return ite, find
 
@@ -159,17 +152,13 @@ if __name__ == '__main__':
     results = []
     qubits = SIZE
     n = 2**(qubits-1)
-    
+
     for _,sat in sats[START::DIRECT]:
         temp = sat.split('\n')[1]
         _, _, variables, clasules = temp.split()
-        #expression = gen_sat(int(variables),int(clasules))
         print(f'[{int(clasules)}/{int(variables)}]')
         ite, find = test(sat, qubits)
         print(f'[{int(clasules)}/{int(variables)}] = {int(clasules)/int(variables)} -> {ite}, {find}')
-        f = open(f"output/partial_new_{START}.txt","a")
-        f.write(f"{int(clasules)/int(variables)},{ite},{find}\n")
-        f.close()
         results.append([int(clasules)/int(variables),ite, find])
 
     df = pd.DataFrame(results, columns=['Clau/var', 'Iterações','Achado'])
@@ -177,3 +166,7 @@ if __name__ == '__main__':
     df.to_csv(f"output/results_new_{START}.csv", index=False)
     df.plot.scatter(x="Clau/var", y="Iterações", c=df['Achado'].map(colors))
     plt.show()
+
+
+def test_version():
+    assert __version__ == '0.1.0'
