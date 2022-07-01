@@ -108,7 +108,7 @@ def test(expression, qubits):
     size = vari = int(vari)
     clau = int(clau)
 
-    s = int((pi/4)*sqrt(2**size))
+    s = int((pi/4)*(2**size))
 
     ite = 0
     steps = 0
