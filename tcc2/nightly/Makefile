@@ -9,3 +9,7 @@ test:
 .PHONY: single
 single: 
 	poetry run ket src/quant_sat_single.ket
+
+.PHONY: print
+print:
+	poetry run python output/print.py
