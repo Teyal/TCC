@@ -1,8 +1,6 @@
 from random import randint, sample
 import pandas as pd
 import os
-SIZE = int(os.getenv('SIZE'))
-MAX = int(os.getenv('MAX'))
 
 def all_nuns(size):
     reachables = set()
@@ -21,10 +19,6 @@ def gen_ranges(ranges, size, num_values = 3):
         possible = [(n,c,v) for n,c,v in nums if n>mi and n<ma]
         print(f"[{mi},{ma}] -> {len(possible)}")
         finals.extend(possible)
-        #if len(possible) < MAX:
-        #    finals.extend(possible)    
-        #else:
-        #    finals.extend(sample(possible, k=MAX))
     return finals
 
 min, max = 0, 0.5 # values that can be changed
@@ -32,8 +26,4 @@ ranges = [[min+0.5*i, max+0.5*i] for i in range(10)]
 for i in range(25,31):
     print(f'Qubits: {i}')
     values = gen_ranges(ranges,i)
-#values = gen_ranges(ranges,SIZE)
 
-#print(values)
-#df = pd.DataFrame(values, columns=['Clau/var', 'Cla','Var'])
-#df.to_csv('sats/range_values.csv', index=False)

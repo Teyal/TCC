@@ -1,5 +1,0 @@
-A B !C !D
-D !C !A
-B C D
-C !D
-!A !B C
